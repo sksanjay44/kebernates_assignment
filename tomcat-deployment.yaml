@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomcat-webapp
+  template:
+    metadata:
+      labels:
+        app: tomcat-webapp
+    spec:
+      containers:
+      - name: tomcat-webapp
+        image: janardhanyelusuri/tomcat-webapp:latest
+        ports:
+        - containerPort: 8080

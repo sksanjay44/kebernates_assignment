@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tomcat-webapp-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: tomcat-webapp
+  ports:
+  - protocol: TCP
+    port: 8080        # port inside the cluster
+    targetPort: 8080  # container port
+     
