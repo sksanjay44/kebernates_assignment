@@ -6,4 +6,6 @@
 
 4). You can access this application on any port you want to (it's your choice).
 
-5). This application is deploying tomcat server in kubernetes.
+5). This application is deploying tomcat server in kubernetes
+
+6)for a healthy relation devops play crucial role.
